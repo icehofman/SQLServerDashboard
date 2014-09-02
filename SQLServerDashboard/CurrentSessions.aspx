@@ -89,7 +89,7 @@ ORDER BY
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
-                                <%# Convert.ToInt32(Eval("CPU")) > 3000 ? "<span class='label label-warning'>High CPU</span>" : "" %>                                
+                                <%# Convert.ToInt32(Eval("CPU_TIME")) > 3000 ? "<span class='label label-warning'>High CPU</span>" : "" %>                                
                                 <%# Convert.ToInt32(Eval("Blocker")) > 0 ? "<span class='label label-warning'>Blocking</span>" : "" %>                                
                                 
                             </ItemTemplate>

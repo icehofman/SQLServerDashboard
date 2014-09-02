@@ -78,7 +78,9 @@
     <Content Include="PerformanceCounters.aspx" />
     <Content Include="Sessions.aspx" />
     <Content Include="TestFlot.html" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="WhoIsActive.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +102,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Properties\PublishProfiles\stfpoaweb01.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

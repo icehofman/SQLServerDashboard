@@ -1,2 +1,5 @@
 SQLServerDashboard/obj/
 SQLServerDashboard/bin/
+*.suo
+*.user
+SQLServerDashboard/Properties/PublishProfiles/
