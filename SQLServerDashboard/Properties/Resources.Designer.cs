@@ -77,5 +77,25 @@ namespace SQLServerDashboard.Properties {
                 return ResourceManager.GetString("CurrentSessions", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SELECT 
+        ///   SessionId    = s.session_id, 
+        ///   LastCommandBatch = (select text from sys.dm_exec_sql_text(c.most_recent_sql_handle)),
+        ///   TotalCPU_ms        = s.cpu_time, 
+        ///   UserProcess  = CONVERT(CHAR(1), s.is_user_process),
+        ///   LoginInfo    = s.login_name,   
+        ///   DbInstance   = ISNULL(db_name(r.database_id), N&apos;&apos;), 
+        ///   TaskState    = ISNULL(t.task_state, N&apos;&apos;), 
+        ///   Command      = ISNULL(r.command, N&apos;&apos;), 
+        ///   App            = ISNULL(s.program_name, N&apos;&apos;), 
+        ///   WaitTime_ms  = ISNULL(w.wait_duration_ms, 0),
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Processes {
+            get {
+                return ResourceManager.GetString("Processes", resourceCulture);
+            }
+        }
     }
 }
